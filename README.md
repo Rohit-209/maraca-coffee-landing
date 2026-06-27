@@ -4,6 +4,8 @@ A reference for the design choices, tools, and techniques used to build this sam
 coffee-brand landing page. Mirrors what is actually in the repo so you can swap
 things out without guessing.
 
+**Live:** https://maraca-coffee-landing.vercel.app/
+
 ---
 
 ## 1. Tech stack
