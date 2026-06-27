@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #f7f1e8;
+  --color-cream-light: #fbf6ee;
+  --color-cream-dark: #ede2cf;
+  --color-mocha: #6b3f1d;
+  --color-mocha-light: #8a5a2e;
+  --color-mocha-dark: #4a2912;
+  --color-espresso: #2a1810;
+  --color-crema: #c9a47a;
+
+  --font-display: "Fraunces", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-espresso font-sans antialiased;
+    font-feature-settings: "ss01", "ss02";
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .grain {
+    background-image:
+      radial-gradient(rgba(74, 41, 18, 0.06) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+}
