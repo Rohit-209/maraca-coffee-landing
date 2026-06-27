@@ -35,21 +35,21 @@ export default function Origins() {
   return (
     <section
       id="origins"
-      className="relative bg-cream py-32 lg:py-44 grain overflow-hidden"
+      className="relative bg-cream py-24 sm:py-32 lg:py-44 grain overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="flex items-end justify-between flex-wrap gap-6 mb-16">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+        <div className="flex items-end justify-between flex-wrap gap-5 sm:gap-6 mb-12 sm:mb-16">
           <div>
-            <span className="text-xs uppercase tracking-[0.25em] text-mocha-dark/70">
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-mocha-dark/70">
               04 — Origins
             </span>
-            <h2 className="font-display text-5xl lg:text-6xl text-espresso mt-4 leading-[1.02] font-medium tracking-tight">
+            <h2 className="font-display text-[clamp(2.25rem,8vw,3.75rem)] lg:text-6xl text-espresso mt-3 sm:mt-4 leading-[1.02] font-medium tracking-tight">
               This season's <br /> <span className="italic text-mocha">picks.</span>
             </h2>
           </div>
           <a
             href="#"
-            className="inline-flex items-center gap-2 text-mocha-dark hover:text-espresso transition text-sm uppercase tracking-[0.18em]"
+            className="inline-flex items-center gap-2 text-mocha-dark hover:text-espresso transition text-xs sm:text-sm uppercase tracking-[0.18em]"
           >
             All origins
             <ArrowUpRight size={16} strokeWidth={1.6} />
@@ -65,7 +65,7 @@ export default function Origins() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.7, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ y: -6 }}
-              className="group relative bg-cream-light border border-mocha/10 rounded-3xl p-8 overflow-hidden cursor-pointer transition-shadow hover:shadow-2xl hover:shadow-mocha/10"
+              className="group relative bg-cream-light border border-mocha/10 rounded-3xl p-6 sm:p-8 overflow-hidden cursor-pointer transition-shadow hover:shadow-2xl hover:shadow-mocha/10"
             >
               <div
                 className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl opacity-40 -translate-y-12 translate-x-12 group-hover:opacity-70 transition-opacity"
@@ -73,20 +73,20 @@ export default function Origins() {
               />
 
               <div className="relative">
-                <div className="flex items-start justify-between mb-12">
-                  <span className="text-xs uppercase tracking-[0.2em] text-mocha-dark/60">
+                <div className="flex items-start justify-between mb-10 sm:mb-12">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-[0.2em] text-mocha-dark/60">
                     {o.country}
                   </span>
-                  <span className="font-display text-2xl text-espresso">
+                  <span className="font-display text-xl sm:text-2xl text-espresso">
                     {o.price}
                   </span>
                 </div>
 
-                <h3 className="font-display text-4xl text-espresso leading-none">
+                <h3 className="font-display text-[clamp(1.875rem,7vw,2.25rem)] sm:text-4xl text-espresso leading-none">
                   {o.name}
                 </h3>
 
-                <div className="my-10 h-px bg-mocha/10" />
+                <div className="my-8 sm:my-10 h-px bg-mocha/10" />
 
                 <div className="space-y-3 text-sm text-mocha-dark">
                   <div className="flex justify-between">
@@ -103,8 +103,8 @@ export default function Origins() {
                   </div>
                 </div>
 
-                <div className="mt-10 flex items-center justify-between">
-                  <span className="text-xs uppercase tracking-[0.18em] text-mocha-dark group-hover:text-espresso transition">
+                <div className="mt-8 sm:mt-10 flex items-center justify-between">
+                  <span className="text-[10px] sm:text-xs uppercase tracking-[0.18em] text-mocha-dark group-hover:text-espresso transition">
                     Add to bag
                   </span>
                   <span className="w-10 h-10 rounded-full bg-espresso text-cream flex items-center justify-center group-hover:bg-mocha-dark transition">

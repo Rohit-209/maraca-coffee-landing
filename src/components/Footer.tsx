@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-cream text-mocha-dark border-t border-mocha/10 py-16">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="font-display text-3xl text-espresso font-semibold">
